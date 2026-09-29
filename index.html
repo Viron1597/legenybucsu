@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body style="margin:0;display:grid;place-items:center;height:100vh;background:#111;color:#fff;font:bold 40vmin sans-serif">
+<div id="b"></div>
+<script>
+const m={"1":"K","2":"SZ_HELYETT_EGY_BETU"};
+document.getElementById('b').textContent=m[new URLSearchParams(location.search).get('p')]||'?';
+</script>
