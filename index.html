@@ -3,6 +3,5 @@
 <body style="margin:0;display:grid;place-items:center;height:100vh;background:#111;color:#fff;font:bold 40vmin sans-serif">
 <div id="b"></div>
 <script>
-const m={"1":"M","2":"Ű","3":"D","4":"S","5":"Y","6":"A","7":"Ő","8":"R","9":"K","10":"Í","11":"Z","12":"B","13":"Ö","14":"X","15":"E","16":"V","17":"Ó","18":"H","19":"C","20":"Q","21":"L","22":"Ú","23":"F","24":"N","25":"É","26":"W","27":"T","28":"G","29":"Ü","30":"P","31":"I","32":"J","33":"Á","34":"O","35":"U"};
-document.getElementById('b').textContent=m[new URLSearchParams(location.search).get('p')]||'?';
+document.getElementById('b').textContent=(new URLSearchParams(location.search).get('p')||'?').slice(0,1).toUpperCase();
 </script>
